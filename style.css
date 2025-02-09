@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.sidebar{
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    /* margin-bottom: 100px; */
+
+}
+.sidenav{
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.sidenav .logo{
+    width: 120px;
+}
+.sidenav .logo img{
+    width: 100%;
+}
+.sidenav ul{
+    list-style: none;
+}
+.sidenav ul li{
+    padding:10px 20px ;
+}
+.sidenav ul li a:hover{
+    color: white;
+}
+.sidenav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+
+
+}
+.sidenav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.Libary::after{
+    content: "+";
+    float: right;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.playlist{
+    background-color:#302f2f;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* width: 100%; */
+}
+.sidebarscroll{
+    height: 250px;
+    overflow-y: auto;
+
+}
+.sidebarscroll::-webkit-scrollbar{
+    background: transparent;
+}
+.sidebarscroll::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: transparent;
+}
+.sidebarscroll:hover::-webkit-scrollbar-thumb{
+    background-color: #cccccc2d;
+    width:3px;
+}
+.playlist h4{
+    color: white;
+    font-size: 14px;
+    margin: 12px 0;
+}
+.playlist p{
+    color: #fff;
+    font-size: 13px;
+    margin: 12px 0;
+}
+.playlist button {
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.privacy ul li a{
+    text-decoration: none;
+    color: #575656;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color: #969595;
+   
+}
+.privacy ul{
+    list-style: none;
+    margin-top: 20px;
+
+}
+.privacy ul li{
+    padding-bottom: 8px;
+    padding: 0 12px;
+}
+.english{
+    padding: 20px 30px;
+
+}
+.english button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    border:1px solid #818080;
+    border-radius: 20px;
+    margin: 8px 0px ;
+}
+.english button:hover{
+    padding: 11px 31px;
+    border:1px solid #ffffff
+}
+.english  a i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #818080;
+}
+.main{
+    margin-left: 400px;
+    background-color: #181818;
+    height: 100vh;   
+    overflow-y: auto;
+    margin-bottom: 80px;
+}
+.main::-webkit-scrollbar{
+    background-color: transparent;
+
+}
+.main::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+}
+.main:hover::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: #5c5b5b;
+}
+.main .topnav{
+    padding: 20px 30px;
+    
+    background-color:#131212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position:fixed;
+    width: 100%;
+    */
+    
+}
+.main .topnav  button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    position:relative;
+}
+.main .topnav .prev-btn button i{
+    color: #838181;
+    font-size: 22px;
+    margin-right: 10px;
+
+}
+.topnav .login-btn span .install{
+    color: #838181;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.topnav .login-btn  span .install:hover{
+    color: #ffffff;}
+.topnav .login-btn .signup:hover{
+    color: #ffffff;}
+.topnav .login-btn .signup{
+    color: #838181;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.topnav .login-btn .signup:hover{
+    color: #ffffff;
+}
+.topnav .login-btn .login{
+    color: #121212;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.topnav .login-btn .login:hover{
+    background-color: #c3c0c0;
+
+}
+.spotify-playlist{
+    padding: 20px 40px;
+
+}
+.spotify-playlist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+
+}
+.spotify-playlist .card .item{
+    width: 190px;
+    min-width: 140px;
+    background-color: #2e2c2c;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+.spotify-playlist .card .item:hover{
+    background-color: #323131;
+}
+
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius:6px ;
+    margin-bottom: 10px;
+}
+.spotify-playlist .item h4{
+    color: #fff;
+
+}
+.spotify-playlist .item p{
+    color: #c1bfbf;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+.spotify-playlist .item p:hover{
+    text-decoration: underline;
+    
+}
+.spotify-playlist .play-btn{
+    position: relative;
+
+}
+.spotify-playlist .play-btn i{
+    position:absolute;
+    background-color: #1db954;
+    border-radius: 100%;
+    padding: 12px;
+    right: 8px;
+    top:-40px;
+    opacity: 0;
+    transform: 0.3s ease all;
+}
+.spotify-playlist .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.popular{
+    padding: 20px 40px;
+
+}
+.popular h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+
+.popular .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+
+}
+.popular .card .item{
+    width: 190px;
+    min-width: 140px;
+    background-color: #2e2c2c;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+.popular .card .item:hover{
+    background-color: #323131;
+}
+
+.popular .card .item img{
+    width: 100%;
+    border-radius:6px ;
+    margin-bottom: 10px;
+}
+
+.popular .item p{
+    color: #cfcfcf;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 300px;
+
+}
+.popular .item p:hover{
+    text-decoration: underline;
+    
+}
+.popular .play-btn{
+    position: relative;
+
+}
+.popular .play-btn i{
+    position:absolute;
+    background-color: #1db954;
+    border-radius: 100%;
+    padding: 12px;
+    right: 8px;
+    top:-40px;
+    opacity: 0;
+    transform: 0.3s ease all;
+}
+.popular .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+
+.footer-sectiion{
+    padding: 20px 40px;
+
+}
+.footer-sectiion .footer{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.footer-sectiion .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px ;
+
+}
+.footer-sectiion .footer .footer-links .footer-coloum{
+    margin: 0 12px;
+}
+.footer-sectiion .footer .footer-links div{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.footer-sectiion .footer .footer-links ul li{
+    list-style-type: none;
+    margin: 6px 0;
+}
+.footer-sectiion .footer .footer-links ul li a{
+    text-decoration: none;
+    color: #969393;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-sectiion .footer .footer-links ul li a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+.footer .social i{
+    color: #fff;
+    background-color: #353434;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.footer .social i:hover{
+    
+    background-color: #474646;
+    
+
+}
+hr{
+    margin: 20px 40px;
+    outline: 0;
+    border: 1px solid #666666;
+    margin-top: 40px;
+}
+.copy{
+    padding: 0 40px;
+    color: #969393;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.preview{
+    display: flex;
+
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896,#509bf5);
+    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 12px 40px;
+
+}
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff
+}
+.preview p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff
+}
+.preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+
+}
